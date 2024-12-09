@@ -1,0 +1,35 @@
+/* src/components/HeroSection.css */
+.hero-container {
+    background: #0056b3;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-container p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-container .btn-primary {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-container .btn-primary:hover {
+    background-color: #0056b3;
+}
