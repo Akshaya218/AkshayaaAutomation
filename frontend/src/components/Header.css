@@ -1,32 +1,109 @@
+/* Header Styles */
 .header {
+    background-color: #000; /* Black background */
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Increased shadow for better depth */
+    transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+/* Header Container */
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #333;
-    color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    transition: padding 0.3s ease;
 }
 
-.header .logo img {
-    height: 50px;
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Slightly larger logo */
+    object-fit: contain;
+    transition: transform 0.3s ease; /* Smooth scale on hover */
 }
 
-.header .navbar ul {
-    display: flex;
+/* Logo Hover Effect */
+.logo img:hover {
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+/* Navbar Styling */
+.navbar ul {
     list-style: none;
-    gap: 20px;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-.header .navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.navbar ul li {
+    margin: 0;
 }
 
-.header .contact-button a {
-    background-color: #f90;
+.navbar ul li a {
     color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
     text-decoration: none;
+    font-size: 1.1rem; /* Increased font size for better readability */
+    font-weight: 500;
+    letter-spacing: 0.5px; /* Subtle letter-spacing */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.navbar ul li a:hover {
+    color: #3498db; /* Light blue on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Contact Button Styling */
+.contact-button a {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 25px; /* Increased padding for better button size */
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    font-weight: 600;
+}
+
+.contact-button a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+        text-align: left; /* Align navbar items to the left */
+    }
+
+    .contact-button a {
+        margin-top: 15px;
+        width: 100%; /* Make button full-width on mobile */
+        padding: 12px 20px;
+    }
+
+    .logo img {
+        height: 40px; /* Slightly smaller logo for mobile */
+    }
+}
+
+/* Hover Effects for Header */
+.header:hover {
+    background-color: #1a1a1a; /* Darker background when hovering over header */
 }

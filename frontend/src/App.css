@@ -1,25 +1,23 @@
-/* General Styles */
-.app {
+/* src/App.css or specific page styles */
+.container {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
-/* Main Content Styling */
-main {
-  flex-grow: 1;
-  padding: 20px;
-  background-color: #f9f9f9;
+.container > div {
+  width: 30%;
+  margin: 10px;
 }
 
-/* Reset Margins and Paddings */
-body, h1, h2, h3, p {
-  margin: 0;
-  padding: 0;
-}
+@media (max-width: 768px) {
+  .container {
+      display: block;
+  }
 
-a {
-  text-decoration: none;
-  color: inherit;
+  .container > div {
+      width: 100%;
+      margin: 15px auto;
+  }
 }

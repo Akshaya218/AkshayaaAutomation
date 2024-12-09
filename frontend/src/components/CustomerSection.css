@@ -1,0 +1,80 @@
+/* src/components/CustomerSection.css */
+
+/* Section container */
+.customer-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.customer-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Container for customer cards */
+.customer-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container */
+}
+
+/* Individual customer card */
+.customer-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    width: 260px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo styling */
+.customer-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Customer name */
+.customer-card h3 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+/* Testimonial */
+.customer-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .customer-card {
+        width: 90%; /* Adjusts card size for smaller screens */
+    }
+
+    .customer-container {
+        gap: 10px;
+    }
+
+    .customer-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
