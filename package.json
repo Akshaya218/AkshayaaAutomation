@@ -2,35 +2,40 @@
   "name": "akshayaaautomation",
   "version": "1.0.0",
   "description": "A brief description of your project",
-  "main": "index.js", 
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",           
-    "build": "react-scripts build",      
-    "dev": "nodemon server.js",          
-    "test": "react-scripts test",        
-    "lint": "eslint .",                  
-    "heroku-postbuild": "npm run build"  
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "dev": "nodemon server.js",
+    "test": "react-scripts test",
+    "lint": "eslint .",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Akshaya",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",                
-    "cors": "^2.8.5",                    
-    "react": "^18.0.0",                  
-    "react-dom": "^18.0.0",              
-    "react-scripts": "^4.0.3"            
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^4.0.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7",                 
-    "eslint": "^7.25.0"                  
+    "eslint": "^7.25.0",
+    "nodemon": "^2.0.7"
   },
   "engines": {
-    "node": ">=16.0.0",                  
+    "node": ">=16.0.0",
     "npm": ">=7.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Akshaya218/AkshayaaAutomation"
   },
-  "keywords": ["node", "react", "express", "app"]
+  "keywords": [
+    "node",
+    "react",
+    "express",
+    "app"
+  ]
 }
